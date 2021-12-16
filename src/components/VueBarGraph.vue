@@ -301,7 +301,7 @@ export default {
         if (this.maxDomain % i === 0) {
           const shouldForceDecimals = i < 3;
           const numberOfTicks = shouldForceDecimals ? 3 : i;
-          this.digitsUsedInYAxis = this.maxDomain.toFixed(shouldForceDecimals ? 1 : 0).length;
+          this.digitsUsedInYAxis = this.maxDomain.toFixed(shouldForceDecimals ? 1 : 0).replace('.', '').length;
           return [...new Array(numberOfTicks + 1)].map((item, key) => {
             const tickValue = (this.maxDomain / numberOfTicks) * (numberOfTicks - key);
             const yCoord = (this.innerChartHeight / numberOfTicks) * key;
