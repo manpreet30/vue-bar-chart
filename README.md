@@ -25,11 +25,11 @@
 
 ## Install
 ```
-npm i vue-bar-graph
+npm i @manpreet/vue-bar-graph
 ```
 Import it:
 ```
-import VueBarGraph from 'vue-bar-graph';
+import VueBarGraph from '@manpreet/vue-bar-graph';
 ```
 Register it in your component:
 ```
